@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chúc Mừng Sinh Nhật Hồng Nho</title>
-  <meta
-    name="description"
-    content="Trang web chúc mừng sinh nhật Phan Thị Hồng Nho với hiệu ứng mở quà, nhạc nền, confetti, album ảnh và điều ước bất ngờ."
-  />
+  <meta name="description"
+    content="Trang web chúc mừng sinh nhật Phan Thị Hồng Nho với hiệu ứng mở quà, nhạc nền, confetti, album ảnh và điều ước bất ngờ." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
-    rel="stylesheet"
-  />
+    rel="stylesheet" />
   <script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
   <style>
     :root {
@@ -491,10 +489,29 @@
       animation: drift 5s ease-in-out infinite;
     }
 
-    .floating-star:nth-child(1) { top: 42px; left: 52px; animation-delay: 0s; }
-    .floating-star:nth-child(2) { top: 76px; right: 48px; animation-delay: 1s; }
-    .floating-star:nth-child(3) { bottom: 72px; left: 38px; animation-delay: 2s; }
-    .floating-star:nth-child(4) { bottom: 48px; right: 56px; animation-delay: 0.5s; }
+    .floating-star:nth-child(1) {
+      top: 42px;
+      left: 52px;
+      animation-delay: 0s;
+    }
+
+    .floating-star:nth-child(2) {
+      top: 76px;
+      right: 48px;
+      animation-delay: 1s;
+    }
+
+    .floating-star:nth-child(3) {
+      bottom: 72px;
+      left: 38px;
+      animation-delay: 2s;
+    }
+
+    .floating-star:nth-child(4) {
+      bottom: 48px;
+      right: 56px;
+      animation-delay: 0.5s;
+    }
 
     .section {
       margin-top: 28px;
@@ -881,38 +898,87 @@
     }
 
     @keyframes floatCard {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-8px); }
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-8px);
+      }
     }
 
     @keyframes pulseGift {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.045); }
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.045);
+      }
     }
 
     @keyframes blinkText {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.34; }
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.34;
+      }
     }
 
     @keyframes shimmerTitle {
-      0%, 100% { text-shadow: 0 0 0 rgba(0,0,0,0), 0 0 22px rgba(255, 217, 101, 0.24); }
-      50% { text-shadow: 0 0 0 rgba(0,0,0,0), 0 0 30px rgba(255, 217, 101, 0.44); }
+
+      0%,
+      100% {
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 22px rgba(255, 217, 101, 0.24);
+      }
+
+      50% {
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 30px rgba(255, 217, 101, 0.44);
+      }
     }
 
     @keyframes textFlow {
-      from { background-position: 0% 50%; }
-      to { background-position: 100% 50%; }
+      from {
+        background-position: 0% 50%;
+      }
+
+      to {
+        background-position: 100% 50%;
+      }
     }
 
     @keyframes flicker {
-      0%, 100% { transform: scale(1) rotate(-2deg); opacity: 0.95; }
-      50% { transform: scale(1.12) rotate(2deg); opacity: 1; }
+
+      0%,
+      100% {
+        transform: scale(1) rotate(-2deg);
+        opacity: 0.95;
+      }
+
+      50% {
+        transform: scale(1.12) rotate(2deg);
+        opacity: 1;
+      }
     }
 
     @keyframes drift {
-      0%, 100% { transform: translateY(0) scale(1); }
-      50% { transform: translateY(-12px) scale(1.14); }
+
+      0%,
+      100% {
+        transform: translateY(0) scale(1);
+      }
+
+      50% {
+        transform: translateY(-12px) scale(1.14);
+      }
     }
 
     @keyframes riseBalloon {
@@ -920,9 +986,11 @@
         transform: translateY(0) translateX(0) rotate(0deg);
         opacity: 0;
       }
+
       10% {
         opacity: 0.95;
       }
+
       to {
         transform: translateY(-120vh) translateX(var(--drift, 0px)) rotate(8deg);
         opacity: 0.08;
@@ -934,9 +1002,11 @@
         transform: translate3d(0, 0, 0) scale(0.8);
         opacity: 0;
       }
+
       10% {
         opacity: 1;
       }
+
       to {
         transform: translate3d(var(--move-x, 0px), -280px, 0) scale(1.35);
         opacity: 0;
@@ -944,6 +1014,7 @@
     }
 
     @media (max-width: 920px) {
+
       .hero-grid,
       .letter-layout,
       .stats-grid {
@@ -961,6 +1032,7 @@
     }
 
     @media (max-width: 680px) {
+
       .intro-card,
       .hero,
       .section,
@@ -1010,6 +1082,7 @@
     }
   </style>
 </head>
+
 <body>
   <div class="noise" aria-hidden="true"></div>
   <div class="festival-layer" id="festivalLayer" aria-hidden="true"></div>
@@ -1112,25 +1185,25 @@
     </section>
 
     <section class="section" aria-labelledby="letterHeading">
-      <h2 class="section-heading" id="letterHeading">Lời chúc tuổi 20</h2>
+      <h2 class="section-heading" id="letterHeading">Gửi Công Chúa Của Anh</h2>
       <p class="section-subtitle">
-        Một bức thư nhỏ với hiệu ứng gõ chữ để khoảnh khắc này trở nên dịu dàng và đáng nhớ hơn.
+        Một bức thư nhỏ với hiệu ứng gõ chữ để khoảnh khắc tụi mình bên nhau trở nên dịu dàng và đáng nhớ hơn.
       </p>
       <div class="letter-layout">
         <article class="letter-card">
-          <div class="letter-badge">💌 Bức thư tay gửi Hồng Nho</div>
+          <div class="letter-badge">💌 Bức thư tay gửi em yêu</div>
           <div class="typing-text" id="typingText" aria-live="polite"></div>
         </article>
         <aside class="wish-showcase">
-          <h3>Tuổi 20 thật lung linh</h3>
+          <h3>Tuổi mới thật lung linh</h3>
           <p>
-            Mong rằng năm tuổi mới sẽ mang đến thật nhiều tiếng cười, thật nhiều người thương và thật nhiều
-            cột mốc đáng tự hào. Mỗi ngày đều là một ngày nhẹ nhàng, ấm áp và đầy năng lượng tích cực.
-            Và mỗi ngày đều yêu anh nhiều hơn
+            Mong rằng năm tuổi mới sẽ mang đến cho em thật nhiều tiếng cười, thật nhiều may mắn và những
+            cột mốc đáng tự hào. Mỗi ngày của em đều sẽ thật nhẹ nhàng, ấm áp, đầy năng lượng tích cực...
+            và ngày nào cũng thương anh nhiều hơn một chút nhé!
           </p>
           <div class="wish-quote">
-            “Chúc Hồng Nho tuổi 20 luôn xinh đẹp, hạnh phúc, tràn ngập niềm vui và đạt được mọi ước mơ của
-            em nha em yêu! 🎂✨”
+            “Chúc em yêu tuổi mới luôn xinh đẹp, hạnh phúc, tràn ngập niềm vui và đạt được mọi ước mơ của mình. Có anh
+            luôn ở phía sau em! 🎂✨”
           </div>
         </aside>
       </div>
@@ -1172,8 +1245,7 @@
   <audio id="birthdayAudio" preload="auto" loop>
     <source
       src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8d6d59f91.mp3?filename=happy-birthday-to-you-piano-version-13976.mp3"
-      type="audio/mpeg"
-    />
+      type="audio/mpeg" />
   </audio>
 
   <script>
@@ -1185,12 +1257,12 @@
     };
 
     const wishMessages = [
-      "Chúc Hồng Nho mỗi ngày đều được yêu thương thật nhiều và luôn mỉm cười thật tươi nhé! 💗",
-      "Tuổi 20 của Hồng Nho sẽ đầy những điều đẹp đẽ, may mắn và thật nhiều cơ hội tuyệt vời. ✨",
-      "Mong cho mọi dự định của Hồng Nho đều thuận lợi, mọi ước mơ đều dần trở thành hiện thực. 🌷",
-      "Chúc Hồng Nho luôn giữ được sự dịu dàng, đáng yêu và trái tim ấm áp của mình. 🎀",
-      "Một tuổi mới thật rực rỡ, thật bình yên và luôn có những người chân thành ở bên cạnh nhé! 💫",
-      "Mong Hồng Nho sẽ luôn cảm thấy mình đủ xinh đẹp, đủ giỏi và đủ xứng đáng với mọi điều tốt lành. 🌸"
+      "Chúc công chúa của anh mỗi ngày đều được yêu thương thật nhiều và luôn mỉm cười thật tươi bên anh nhé! 💗",
+      "Tuổi mới của em sẽ đầy những điều đẹp đẽ, may mắn và có anh luôn đồng hành cùng em. ✨",
+      "Mong cho mọi dự định của em đều thuận lợi, mọi ước mơ đều thành hiện thực, vì em luôn có anh phía sau. 🌷",
+      "Chúc em yêu của anh luôn giữ được sự dịu dàng, đáng yêu và trái tim ấm áp như thế này nhé. 🎀",
+      "Một tuổi mới thật rực rỡ, bình yên và chúng mình sẽ cùng nhau đi qua thêm thật nhiều mùa yêu thương nữa! 💫",
+      "Mong em sẽ luôn biết rằng em là cô gái xinh đẹp nhất, giỏi nhất và xứng đáng với mọi điều tốt lành trên đời. 🌸"
     ];
 
     const galleryItems = [
@@ -1294,8 +1366,8 @@
           const media = hasImage
             ? '<img src="' + item.imageUrl + '" alt="Ảnh kỷ niệm ' + (index + 1) + ' của Hồng Nho" />'
             : '<div class="album-placeholder">📸<br />' +
-              item.caption +
-              '<br /><span style="font-weight:600;font-size:0.94rem;opacity:0.85;">Bạn chỉ cần thay link ảnh trong JavaScript.</span></div>';
+            item.caption +
+            '<br /><span style="font-weight:600;font-size:0.94rem;opacity:0.85;">Bạn chỉ cần thay link ảnh trong JavaScript.</span></div>';
 
           return (
             '<article class="album-card">' +
@@ -1477,4 +1549,5 @@
     setInterval(calculateAgeStats, 60 * 1000);
   </script>
 </body>
+
 </html>
